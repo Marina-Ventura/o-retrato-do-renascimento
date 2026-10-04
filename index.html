@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O Retrato do Renascimento — trabalho escolar interativo sobre o Renascimento, Leonardo da Vinci e Rafael Sanzio.">
+    <title>O Retrato do Renascimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-shell">
+
+        <header class="hero">
+            
+            <img
+            class="hero-art"
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Raphael_School_of_Athens.jpg"
+            alt="A Escola de Atenas, de Rafael Sanzio"
+            >
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="eyebrow">ARTE • HISTÓRIA • HUMANISMO</p>
+                <h1>O Retrato do<br><em>Renascimento</em></h1>
+                <p class="hero-subtitle">
+                    Uma viagem pelo período que transformou a maneira como
+                    o ser humano compreendia a arte, a ciência e a si mesmo.
+                </p>
+            </div>
+        </header>
+
+        <div class="ornament-divider" aria-hidden="true">
+            <span>✦</span>
+            <span>❧</span>
+            <span>✦</span>
+        </div>
+
+        <nav class="tabs" aria-label="Seções do trabalho">
+            <button class="tab active" data-screen="inicio">Início</button>
+            <button class="tab" data-screen="contexto">Contexto</button>
+            <button class="tab" data-screen="caracteristicas">Características</button>
+            <button class="tab" data-screen="leonardo">Leonardo</button>
+            <button class="tab" data-screen="rafael">Rafael</button>
+            <button class="tab" data-screen="comparacao">Comparação</button>
+            <button class="tab" data-screen="reflexao">Reflexão</button>
+            <button class="tab" data-screen="conclusao">Conclusão</button>
+        </nav>
+
+        <main>
+
+            <!-- INÍCIO -->
+            <section class="screen active" id="inicio">
+                <div class="intro-layout">
+                    <div class="intro-copy">
+                        <span class="section-label">BEM-VINDO</span>
+                        <h2>Uma nova forma de<br><em>enxergar o mundo.</em></h2>
+                        <p>
+                            Entre os séculos XIV e XVI, a Europa viveu uma profunda
+                            transformação cultural. A arte passou a observar o ser humano,
+                            a natureza e o conhecimento com novos olhos.
+                        </p>
+                        <p>
+                            Explore as abas para conhecer o contexto histórico,
+                            as principais características e os dois grandes mestres
+                            apresentados neste trabalho.
+                        </p>
+                        <button class="gold-button" data-go="contexto">
+                            Começar a viagem <span>→</span>
+                        </button>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="quote-mark">“</div>
+                        <p>
+                            O Renascimento não mudou apenas a forma de fazer arte;
+                            mudou também a maneira como o ser humano enxergava a si
+                            mesmo e o mundo ao seu redor.
+                        </p>
+                        <span>— O espírito renascentista</span>
+                    </div>
+                </div>
+
+                <div class="feature-row">
+                    <article class="feature">
+                        <span class="feature-number">I</span>
+                        <h3>Humanismo</h3>
+                        <p>Valorização do ser humano, da razão e da capacidade de conhecer.</p>
+                    </article>
+                    <article class="feature">
+                        <span class="feature-number">II</span>
+                        <h3>Ciência</h3>
+                        <p>Arte, matemática, anatomia e observação passaram a caminhar juntas.</p>
+                    </article>
+                    <article class="feature">
+                        <span class="feature-number">III</span>
+                        <h3>Harmonia</h3>
+                        <p>Perspectiva, proporção e equilíbrio transformaram a composição artística.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- CONTEXTO -->
+            <section class="screen" id="contexto">
+                <div class="section-heading">
+                    <span class="section-label">01 • CONTEXTO HISTÓRICO</span>
+                    <h2>O nascimento de<br><em>uma nova visão.</em></h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">SÉC. XIV</div>
+                        <div>
+                            <h3>As cidades italianas</h3>
+                            <p>
+                                O movimento ganhou força em cidades como Florença, Veneza
+                                e Roma. O crescimento do comércio e das cidades criou
+                                novas oportunidades para artistas e intelectuais.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">SÉC. XV</div>
+                        <div>
+                            <h3>Mecenato e Humanismo</h3>
+                            <p>
+                                A burguesia e famílias poderosas passaram a financiar
+                                artistas. Ao mesmo tempo, o Humanismo valorizava a
+                                capacidade humana de pensar, investigar e criar.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-date">SÉC. XVI</div>
+                        <div>
+                            <h3>Apogeu artístico</h3>
+                            <p>
+                                Leonardo da Vinci e Rafael Sanzio tornaram-se símbolos
+                                de uma época em que arte, ciência, filosofia e observação
+                                da natureza se aproximaram.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="info-box">
+                    <h3>Principais mudanças do período</h3>
+                    <div class="pill-list">
+                        <span>Humanismo</span>
+                        <span>Cultura greco-romana</span>
+                        <span>Ciência</span>
+                        <span>Perspectiva</span>
+                        <span>Anatomia</span>
+                        <span>Mecenato</span>
+                        <span>Geometria</span>
+                        <span>Valorização do artista</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARACTERÍSTICAS -->
+            <section class="screen" id="caracteristicas">
+                <div class="section-heading centered">
+                    <span class="section-label">02 • CARACTERÍSTICAS</span>
+                    <h2>O que torna a arte<br><em>renascentista?</em></h2>
+                </div>
+
+                <div class="character-grid">
+                    <article class="character-card">
+                        <span>01</span>
+                        <h3>👤 Humanismo</h3>
+                        <p>O ser humano ocupa posição central, com atenção às emoções, ao corpo e à personalidade.</p>
+                    </article>
+
+                    <article class="character-card">
+                        <span>02</span>
+                        <h3>📐 Perspectiva</h3>
+                        <p>A matemática cria profundidade: elementos distantes parecem menores e os próximos, maiores.</p>
+                    </article>
+
+                    <article class="character-card">
+                        <span>03</span>
+                        <h3>🧍 Anatomia</h3>
+                        <p>Estudos do corpo ajudaram os artistas a representar músculos, proporções e movimentos.</p>
+                    </article>
+
+                    <article class="character-card">
+                        <span>04</span>
+                        <h3>⚖️ Proporção</h3>
+                        <p>Equilíbrio, geometria e harmonia passaram a organizar os elementos das composições.</p>
+                    </article>
+
+                    <article class="character-card">
+                        <span>05</span>
+                        <h3>🏛️ Antiguidade</h3>
+                        <p>Arquitetura, filosofia, mitologia e ideais clássicos foram retomados e reinterpretados.</p>
+                    </article>
+
+                    <article class="character-card">
+                        <span>06</span>
+                        <h3>🌄 Natureza</h3>
+                        <p>A paisagem ganhou profundidade e detalhes, acompanhando o interesse pela observação.</p>
+                    </article>
+
+                    <article class="character-card">
+                        <span>07</span>
+                        <h3>✝️ Religião</h3>
+                        <p>Temas religiosos continuaram importantes, mas ganharam mais naturalidade e emoção.</p>
+                    </article>
+
+                    <article class="character-card">
+                        <span>08</span>
+                        <h3>🔬 Conhecimento</h3>
+                        <p>Arte e ciência se aproximaram por meio da investigação, da experiência e da curiosidade.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- LEONARDO -->
+            <section class="screen" id="leonardo">
+                <div class="artist-header">
+                    <div>
+                        <span class="section-label">03 • MESTRE DO RENASCIMENTO</span>
+                        <h2>Leonardo<br><em>da Vinci</em></h2>
+                        <p class="artist-years">1452 — 1519</p>
+                    </div>
+                    <div class="artist-symbol artist-image">
+                        <img
+                        src="https://i.pinimg.com/474x/eb/52/41/eb5241ef780817355f425c6bae3f266b.jpg"
+                        alt="Retrato de Leonardo da Vinci"
+                        >
+                    </div>
+                </div>
+
+                <div class="artist-intro">
+                    <p>
+                        Leonardo da Vinci foi um dos maiores representantes do Renascimento
+                        italiano. Não foi apenas pintor: estudou anatomia, matemática,
+                        engenharia, arquitetura, astronomia, mecânica e natureza.
+                    </p>
+                    <p>
+                        Seu interesse por diferentes áreas fez dele um dos grandes exemplos
+                        do <strong>“homem renascentista”</strong>. Sua arte era marcada pela
+                        observação detalhada da natureza e do corpo humano.
+                    </p>
+                </div>
+
+                <div class="technique">
+                    <div class="technique-title">TÉCNICA</div>
+                    <div>
+                        <h3>Sfumato</h3>
+                        <p>Transições suaves entre luz e sombra, sem contornos rígidos, criando uma aparência delicada e natural.</p>
+                    </div>
+                </div>
+
+                <div class="works">
+                    <h3 class="subheading">Principais obras</h3>
+
+                    <article class="work-card">
+                        
+                        <img
+                        class="work-image"
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo_da_Vinci_-_Mona_Lisa.jpg"
+                        alt="Mona Lisa, de Leonardo da Vinci"
+                        >
+
+                        <div class="work-number">01</div>
+                        <div>
+                            <h3>Mona Lisa</h3>
+                            <p>
+                                Retrato de expressão enigmática, paisagem ao fundo e uso
+                                do sfumato. Reúne realismo, equilíbrio, perspectiva e
+                                atenção às emoções.
+                            </p>
+                            <div class="keyword-row">
+                                <span>Realismo</span><span>Sfumato</span><span>Perspectiva</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="work-card">
+
+    <img
+        class="work-image work-wide"
+        src="https://istoe.com.br/wp-content/uploads/2021/05/ceia-2-1280x720-1-1200x630.jpg"
+        alt="A Última Ceia, de Leonardo da Vinci"
+    >
+                        <div class="work-number">02</div>
+                        <div>
+                            <h3>A Última Ceia</h3>
+                            <p>
+                                Representa o momento em que Jesus anuncia a traição de um
+                                dos discípulos. A perspectiva direciona o olhar para Jesus,
+                                enquanto gestos e expressões revelam diferentes emoções.
+                            </p>
+                            <div class="keyword-row">
+                                <span>Perspectiva</span><span>Emoção</span><span>Composição</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+
+    <img
+        class="work-image"
+        src="assets/o-homem-vitruviano-leonardo-da-vinci.png"
+        alt="Homem Vitruviano, de Leonardo da Vinci"
+    >
+
+    <div class="work-number">03</div>
+                        <div>
+                            <h3>Homem Vitruviano</h3>
+                            <p>
+                                Homem inserido em um círculo e um quadrado, relacionando
+                                proporção, matemática, geometria, anatomia e arte.
+                            </p>
+                            <div class="keyword-row">
+                                <span>Anatomia</span><span>Geometria</span><span>Proporção</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- RAFAEL -->
+                         <section class="screen" id="rafael">
+                <div class="artist-header">
+                    <div>
+                        <span class="section-label">03 • MESTRE DO RENASCIMENTO</span>
+                        <h2>Rafael<br><em>Sanzio</em></h2>
+                        <p class="artist-years">1483 — 1520</p>
+                    </div>
+                    <div class="artist-symbol artist-image">
+                        <img
+                        src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/250px-Raffaello_Sanzio.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+                        alt="Retrato de Rafael Sanzio"
+                        >
+                    </div>
+                </div>
+
+                <div class="artist-intro">
+                    <p>
+                        Rafael Sanzio foi um dos grandes mestres do Renascimento italiano.
+                        Sua pintura ficou conhecida pela harmonia, equilíbrio, delicadeza
+                        e beleza das figuras.
+                    </p>
+                    <p>
+                        Trabalhou principalmente em Florença e Roma, onde recebeu importantes
+                        encomendas. Destacou-se pela busca de uma composição considerada
+                        harmônica e ideal.
+                    </p>
+                </div>
+                
+                <div class="rafael-quote">
+                    <span>✦</span>
+                    <p>“Harmonia e equilíbrio como expressão de um ideal de beleza.”</p>
+                    <span>✦</span>
+                </div>
+
+                <div class="works">
+                    <h3 class="subheading">Principais obras</h3>
+
+                    <article class="work-card">
+                        <img
+                        class="work-image work-wide"
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Raphael_School_of_Athens.jpg"
+                        alt="A Escola de Atenas, de Rafael Sanzio"
+                        >
+                        
+                        <div class="work-number">01</div>
+                        <div>
+                            <h3>A Escola de Atenas</h3>
+                            <p>
+                                Filósofos da Antiguidade aparecem reunidos em um grande
+                                espaço arquitetônico. No centro estão Platão e Aristóteles,
+                                representando a valorização do conhecimento e da filosofia.
+                            </p>
+                            <div class="keyword-row">
+                                <span>Humanismo</span><span>Filosofia</span><span>Perspectiva</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                        class="work-image"
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Raphael_-_Sistine_Madonna.jpg"
+                        alt="A Madona Sistina, de Rafael Sanzio"
+                        >
+                        
+                        <div class="work-number">02</div>
+                        <div>
+                            <h3>A Madona Sistina</h3>
+                            <p>
+                                Maria segura o menino Jesus. A obra evidencia a habilidade
+                                de Rafael na representação de figuras humanas, expressões
+                                e composição equilibrada.
+                            </p>
+                            <div class="keyword-row">
+                                <span>Harmonia</span><span>Expressão</span><span>Composição</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <img
+                        class="work-image"
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Raphael_-_Madonna_in_the_Meadow_-_Google_Art_Project.jpg"
+                        alt="Madona do Prado, de Rafael Sanzio"
+                        >
+                        <div class="work-number">03</div>
+                        <div>
+                            <h3>Madona do Prado</h3>
+                            <p>
+                                Maria e o menino Jesus aparecem acompanhados por São João
+                                Batista. A paisagem cria uma relação harmoniosa entre as figuras.
+                            </p>
+                            <div class="keyword-row">
+                                <span>Equilíbrio</span><span>Suavidade</span><span>Paisagem</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- COMPARAÇÃO -->
+            <section class="screen" id="comparacao">
+                <div class="section-heading centered">
+                    <span class="section-label">05 • DOIS MESTRES</span>
+                    <h2>Leonardo × <em>Rafael</em></h2>
+                    <p>Dois caminhos diferentes para expressar os ideais do Renascimento.</p>
+                </div>
+
+                <div class="comparison">
+                    <div class="comparison-column">
+                        <div class="comparison-title">LEONARDO DA VINCI</div>
+                        <div class="comparison-item"><strong>Investigação</strong><span>científica</span></div>
+                        <div class="comparison-item"><strong>Estudos</strong><span>de anatomia</span></div>
+                        <div class="comparison-item"><strong>Observação</strong><span>da natureza</span></div>
+                        <div class="comparison-item"><strong>Técnica</strong><span>sfumato</span></div>
+                        <div class="comparison-item"><strong>Interesse</strong><span>arte + ciência</span></div>
+                        <div class="comparison-item"><strong>Obra símbolo</strong><span>Mona Lisa</span></div>
+                    </div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="comparison-column">
+                        <div class="comparison-title">RAFAEL SANZIO</div>
+                        <div class="comparison-item"><strong>Busca</strong><span>harmonia</span></div>
+                        <div class="comparison-item"><strong>Estilo</strong><span>beleza idealizada</span></div>
+                        <div class="comparison-item"><strong>Composição</strong><span>equilibrada</span></div>
+                        <div class="comparison-item"><strong>Influência</strong><span>clássica</span></div>
+                        <div class="comparison-item"><strong>Qualidade</strong><span>delicadeza</span></div>
+                        <div class="comparison-item"><strong>Obra símbolo</strong><span>A Escola de Atenas</span></div>
+                    </div>
+                </div>
+
+                <div class="common-ground">
+                    <span>✦</span>
+                    <p>
+                        Apesar das diferenças, ambos representam valores centrais do Renascimento:
+                        <strong>humanismo, conhecimento, equilíbrio, observação e valorização do ser humano.</strong>
+                    </p>
+                    <span>✦</span>
+                </div>
+            </section>
+
+            <!-- REFLEXÃO -->
+            <section class="screen" id="reflexao">
+                <div class="section-heading">
+                    <span class="section-label">06 • REFLEXÃO DO GRUPO</span>
+                    <h2>O que o<br><em>Renascimento nos diz?</em></h2>
+                </div>
+
+                <div class="reflection-layout">
+                    <div class="reflection-main">
+                        <div class="big-letter">“</div>
+                        <p>
+                            Uma possível interpretação do grupo é que o Renascimento representa
+                            uma <strong>mudança na maneira como o ser humano enxergava a si mesmo
+                            e o mundo</strong>.
+                        </p>
+                        <p>
+                            A arte passou a buscar maior proximidade com a realidade. O corpo
+                            humano, as emoções, a natureza e o conhecimento receberam maior atenção.
+                        </p>
+                        <p>
+                            Leonardo demonstra a união entre <strong>arte e ciência</strong>,
+                            enquanto Rafael demonstra a busca pela <strong>harmonia e pelo equilíbrio</strong>.
+                        </p>
+                        <p>
+                            Assim, o Renascimento pode ser interpretado não apenas como um período
+                            artístico, mas como uma transformação cultural que colocou o conhecimento,
+                            a razão e o ser humano em uma posição de grande importância.
+                        </p>
+                    </div>
+
+                    <aside class="reflection-aside">
+                        <span class="section-label">IDEIAS-CHAVE</span>
+                        <ul>
+                            <li>O ser humano como observador e criador.</li>
+                            <li>Arte e conhecimento podem caminhar juntos.</li>
+                            <li>Compreender o mundo também é uma forma de representá-lo.</li>
+                            <li>A curiosidade impulsiona novas formas de pensar.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- CONCLUSÃO -->
+            <section class="screen" id="conclusao">
+                <div class="conclusion">
+                    <span class="section-label">07 • CONCLUSÃO</span>
+                    <h2>O legado de uma<br><em>nova visão de mundo.</em></h2>
+
+                    <p>
+                        O Renascimento foi um período fundamental para a história da arte
+                        e da cultura ocidental. Influenciado pelo Humanismo e pela cultura
+                        greco-romana, promoveu uma nova valorização do ser humano, da natureza,
+                        da ciência e do conhecimento.
+                    </p>
+
+                    <p>
+                        Leonardo da Vinci e Rafael Sanzio foram dois dos principais representantes
+                        desse período. Leonardo destacou-se pela união entre arte, ciência e
+                        observação, enquanto Rafael ficou conhecido pela harmonia, equilíbrio e
+                        beleza de suas composições.
+                    </p>
+
+                    <p>
+                        Obras como <em>Mona Lisa</em>, <em>A Última Ceia</em>,
+                        <em>Homem Vitruviano</em> e <em>A Escola de Atenas</em>
+                        demonstram como os artistas renascentistas procuravam representar
+                        o mundo de maneira mais realista, racional e humana.
+                    </p>
+
+                    <div class="final-quote">
+                        <span>✦</span>
+                        <blockquote>
+                            “O Renascimento não mudou apenas a forma de fazer arte;
+                            mudou também a maneira como o ser humano enxergava a si mesmo
+                            e o mundo ao seu redor.”
+                        </blockquote>
+                        <span>✦</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <span>O RETRATO DO RENASCIMENTO</span>
+            <span>Arte • História • Humanismo</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

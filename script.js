@@ -120,3 +120,83 @@ document.addEventListener("keydown", (event) => {
     }
 
 });
+
+/* =========================================================
+   AMPLIAR IMAGENS DAS OBRAS
+========================================================= */
+
+const imagesToZoom = document.querySelectorAll(
+    ".work-image, .hero-art"
+);
+
+const imageModal = document.createElement("div");
+
+imageModal.className = "image-modal";
+
+imageModal.innerHTML = `
+    <button class="image-modal-close" aria-label="Fechar imagem">
+        ×
+    </button>
+
+    <img src="" alt="">
+`;
+
+document.body.appendChild(imageModal);
+
+const modalImage = imageModal.querySelector("img");
+const closeButton = imageModal.querySelector(".image-modal-close");
+
+
+/* Abrir imagem */
+
+imagesToZoom.forEach((image) => {
+
+    image.addEventListener("click", () => {
+
+        modalImage.src = image.src;
+        modalImage.alt = image.alt;
+
+        imageModal.classList.add("active");
+
+        document.body.style.overflow = "hidden";
+    });
+
+});
+
+
+/* Fechar pelo X */
+
+closeButton.addEventListener("click", () => {
+
+    imageModal.classList.remove("active");
+
+    document.body.style.overflow = "";
+});
+
+
+/* Fechar clicando fora da imagem */
+
+imageModal.addEventListener("click", (event) => {
+
+    if (event.target === imageModal) {
+
+        imageModal.classList.remove("active");
+
+        document.body.style.overflow = "";
+    }
+
+});
+
+
+/* Fechar com ESC */
+
+document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape") {
+
+        imageModal.classList.remove("active");
+
+        document.body.style.overflow = "";
+    }
+
+});

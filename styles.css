@@ -1037,3 +1037,20 @@ footer {
     }
 
 }
+
+/* ================= TABS NO CELULAR ================= */
+
+@media (max-width: 600px) {
+
+    .tabs {
+        gap: 5px;
+        padding: 12px 10px;
+    }
+
+    .tab {
+        padding: 11px 12px;
+        font-size: .68rem;
+        min-height: 42px;
+    }
+
+}

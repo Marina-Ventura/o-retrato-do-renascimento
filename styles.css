@@ -1098,4 +1098,111 @@ footer {
         flex-shrink: 0;
     }
 
+/* =========================================================
+   AMPLIAR IMAGENS DAS OBRAS
+========================================================= */
+
+.image-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(20, 12, 5, .88);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .25s ease, visibility .25s ease;
+
+    cursor: zoom-out;
+}
+
+.image-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-modal img {
+    max-width: 90vw;
+    max-height: 88vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+
+    border: 8px solid var(--paper-light);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, .6),
+        0 0 0 1px var(--gold);
+
+    cursor: default;
+
+    transform: scale(.92);
+    transition: transform .25s ease;
+}
+
+.image-modal.active img {
+    transform: scale(1);
+}
+
+.image-modal-close {
+    position: absolute;
+
+    top: 18px;
+    right: 25px;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid var(--gold-light);
+    border-radius: 50%;
+
+    background: rgba(50, 30, 12, .8);
+    color: var(--paper-light);
+
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.image-modal-close:hover {
+    background: var(--gold);
+    transform: scale(1.08);
+}
+
+/* Indica que as imagens podem ser clicadas */
+
+.work-image,
+.hero-art {
+    cursor: zoom-in;
+}
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+    .image-modal {
+        padding: 15px;
+    }
+
+    .image-modal img {
+        max-width: 94vw;
+        max-height: 82vh;
+        border-width: 5px;
+    }
+
+    .image-modal-close {
+        top: 12px;
+        right: 12px;
+    }
 }

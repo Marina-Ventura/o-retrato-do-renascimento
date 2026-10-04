@@ -201,6 +201,10 @@ h2 em {
     font-weight: 600;
     letter-spacing: .055em;
     transition: .22s ease;
+
+    /* Melhor resposta ao toque em celulares */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .tab:hover {

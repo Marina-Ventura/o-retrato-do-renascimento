@@ -1,8 +1,69 @@
 /* =========================================================
    O RETRATO DO RENASCIMENTO
-   Estilo inspirado na referência enviada:
-   papel antigo + madeira + molduras clássicas + editorial
+   ...
 ========================================================= */
+
+
+/* =========================================================
+   FONTES LOCAIS
+========================================================= */
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("assets/cinzel/cinzel-latin-500-normal.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("assets/cinzel/cinzel-latin-600-normal.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("assets/cinzel/cinzel-latin-700-normal.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("assets/cormorant/cormorant-garamond-latin-400-normal.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("assets/cormorant/cormorant-garamond-latin-500-normal.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("assets/cormorant/cormorant-garamond-latin-600-normal.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("assets/cormorant/cormorant-garamond-latin-700-normal.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     --paper: #eee1bd;
